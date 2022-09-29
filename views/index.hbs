@@ -1,0 +1,46 @@
+
+<div class="row">
+  <div class="col-6"><h1> <strong><i>Users </i></strong></h1></div>
+   <div class=" col-6 d-flex justify-content-end ">
+  <a href="/adduser" type="button" class="btn btn-primary align-self-center"><i> + Add User </i></a>
+  </div>
+</div>
+
+<table class=" table table-bordered  table table-striped" >
+  <thead class="thead-dark table-dark">
+    <tr>
+      <th scope="col"><i> # </i></th>
+      <th scope="col"><i> First Name </i></th>
+      <th scope="col"><i> Last Name </i></th>
+      <th scope="col"><i> Email </i></th>
+      <th scope="col"> <i> Phone </i></th>
+      <th scope="col" class="text-end"><i> Action </i></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each table}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.first_name}}</td>
+      <td>{{this.last_name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.phone}}</td>
+      <td class="text-end">
+    <a href="/viewuser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-eye">View</i></a>
+    <a href="/edituser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil">Edit</i></a>
+    <a href="/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x">Delete</i></a>
+    </tr>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<nav ar ia-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/"><i><strong> Home </strong></i></a></li>
+    <li class="breadcrumb-item active" aria-current="page"><i> NEW USER </i></li>
+  </ol>
+  </nav>
+   {{#if alert}}
+<div class="col-8 alert alert-info alert-dismissible fade show " role="alert">
+    {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if }}
+</nav>
+<form method="post" action="/adduser" class="row g-3 needs-validation" novalidate>
+{{> user-form}}
+</form>

@@ -4,13 +4,15 @@ const userControllers =  require('../controllers/userControllers')
 
 router.get('/', userControllers.view)
 router.post('/', userControllers.find)
-//router.get('/:id', userControllers.delete)
 
 router.get('/adduser', userControllers.form)
 router.post('/adduser', userControllers.create)
 router.get('/edituser/:id', userControllers.edit)
 router.post('/edituser/:id', userControllers.update)
 router.get('/viewuser/:id', userControllers.viewall)
+router.get('/:id', userControllers.delete)
+
+
 
 
 module.exports = router

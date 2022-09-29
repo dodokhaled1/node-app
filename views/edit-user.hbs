@@ -7,12 +7,12 @@
    {{#if alert}}
 <div class="col-8 alert alert-info d-flmissaiex align-items-center disble fade show " role="alert">
     {{alert}}
-  <button type="button" class="btn-close float-right" data-bs-dismiss="alert" aria-label="Close"></button>
+  <button type="button" class="btn-close float-right " data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 {{/if }}
 
   {{#each table}}
-  <form action="/adduser" method="post" class="row g-3 needs-validation" novalidate>
+  <form action="/edituser/{{this.id}}" method="post" class=" row g-3 needs-validation table table-striped " novalidate>
    {{> user-form}}
   </form>
   {{/each}}

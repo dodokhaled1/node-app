@@ -2,11 +2,11 @@
 <div class="row">
   <div class="col-6"><h1> <strong><i>Users </i></strong></h1></div>
    <div class=" col-6 d-flex justify-content-end ">
-  <a href="/adduser" type="button" class="btn btn-primary align-self-center"><i> + Add User </i></a>
+  <a href="/adduser" type="button" class="btn btn-primary align-self-center">+ add user</a>
   </div>
 </div>
 
-<table class=" table table-bordered  table table-striped" >
+<table class=" table table-bordered  table table-striped " >
   <thead class="thead-dark table-dark">
     <tr>
       <th scope="col"><i> # </i></th>
@@ -29,7 +29,6 @@
     <a href="/viewuser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-eye">View</i></a>
     <a href="/edituser/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil">Edit</i></a>
     <a href="/{{this.id}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x">Delete</i></a>
-    </tr>
     </tr>
     {{/each}}
   </tbody>
